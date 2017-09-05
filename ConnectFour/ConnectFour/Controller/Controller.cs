@@ -30,7 +30,10 @@ namespace ConnectFour
         }
         private void ManageGameLoop()
         {
-            
+            while (_playingGame)
+            {
+
+            }   
         }
     }
 }
