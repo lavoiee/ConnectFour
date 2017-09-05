@@ -8,6 +8,9 @@ namespace ConnectFour
 {
     class Controller
     {
+        private ConsoleView _gameConsole;
+        private GameBoard _gameBoard;
+
         public Controller()
         {
             InitializeGame();
@@ -16,7 +19,8 @@ namespace ConnectFour
 
         private void InitializeGame()
         {
-            throw new NotImplementedException();
+            _gameConsole = new ConsoleView();
+            _gameBoard = new GameBoard();
         }
         private void ManageGameLoop()
         {

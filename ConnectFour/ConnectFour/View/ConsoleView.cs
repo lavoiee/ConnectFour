@@ -8,5 +8,9 @@ namespace ConnectFour
 {
     class ConsoleView
     {
+        public ConsoleView()
+        {
+
+        }
     }
 }
