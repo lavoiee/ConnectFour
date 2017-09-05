@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConnectFour
 {
-    class Program
+    class GameBoard
     {
-        static void Main(string[] args)
-        {
-            Controller gameController = new Controller();
-        }
     }
 }
