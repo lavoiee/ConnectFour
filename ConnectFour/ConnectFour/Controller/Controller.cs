@@ -10,7 +10,17 @@ namespace ConnectFour
     {
         public Controller()
         {
+            InitializeGame();
+            ManageGameLoop();
+        }
 
+        private void InitializeGame()
+        {
+            throw new NotImplementedException();
+        }
+        private void ManageGameLoop()
+        {
+            throw new NotImplementedException();
         }
     }
 }
