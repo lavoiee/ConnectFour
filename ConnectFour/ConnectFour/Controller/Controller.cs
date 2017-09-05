@@ -10,6 +10,7 @@ namespace ConnectFour
     {
         private ConsoleView _gameConsole;
         private GameBoard _gameBoard;
+        private bool _playingGame;
 
         public Controller()
         {
@@ -19,8 +20,9 @@ namespace ConnectFour
 
         private void InitializeGame()
         {
-            _gameConsole = new ConsoleView();
             _gameBoard = new GameBoard();
+            _gameConsole = new ConsoleView();
+            _playingGame = true;
         }
         private void ManageGameLoop()
         {
