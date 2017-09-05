@@ -28,10 +28,13 @@ namespace ConnectFour
         #endregion
 
         #region CONSTRUCTORS
-        public Player()
+        public Player(string name)
         {
-
+            _name = name;
         }
+        #endregion
+
+        #region METHODS
         #endregion
     }
 }
