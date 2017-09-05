@@ -24,7 +24,7 @@ namespace ConnectFour
         }
         private void ManageGameLoop()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

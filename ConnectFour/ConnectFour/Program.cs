@@ -11,6 +11,8 @@ namespace ConnectFour
         static void Main(string[] args)
         {
             Controller gameController = new Controller();
+
+            Console.ReadKey();
         }
     }
 }
