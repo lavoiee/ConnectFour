@@ -8,8 +8,23 @@ namespace ConnectFour
 {
     class ConsoleView
     {
+
+        #region ENUMS
+
+        private enum ViewStatus
+        {
+            PlayerInitialization,
+            PlayingGame
+        }
+
+        #endregion
+
+        #region FIELDS
+
         Player _playerOne;
         Player _playerTwo;
+        
+        #endregion
 
         public ConsoleView(Player playerOne, Player playerTwo)
         {
