@@ -19,7 +19,9 @@ namespace ConnectFour
         #endregion
 
         #region CONSTRUCTORS
-
+        /// <summary>
+        /// Constructor for the controller.
+        /// </summary>
         public Controller()
         {
             InitializeGame();
@@ -29,7 +31,9 @@ namespace ConnectFour
         #endregion
 
         #region METHODS
-
+        /// <summary>
+        /// Method to initialize the game and set up objects.
+        /// </summary>
         private void InitializeGame()
         {
             _gameBoard = new GameBoard();         
@@ -39,6 +43,9 @@ namespace ConnectFour
             _playingGame = true;
         }
 
+        /// <summary>
+        /// Method to manage the game loop.
+        /// </summary>
         private void ManageGameLoop()
         {
             while (_playingGame)
