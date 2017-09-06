@@ -54,7 +54,7 @@ namespace ConnectFour
 
         private void InitializeDisplay()
         {
-
+            
         }
 
         #endregion
