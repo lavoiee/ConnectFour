@@ -32,10 +32,10 @@ namespace ConnectFour
 
         private void InitializeGame()
         {
-            _gameBoard = new GameBoard();
-            _gameConsole = new ConsoleView(_playerOne, _playerTwo);
+            _gameBoard = new GameBoard();         
             _playerOne = new Player();
             _playerTwo = new Player();
+            _gameConsole = new ConsoleView(_playerOne, _playerTwo);
             _playingGame = true;
         }
 
