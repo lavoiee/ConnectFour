@@ -23,8 +23,15 @@ namespace ConnectFour
 
         Player _playerOne;
         Player _playerTwo;
+
+        #endregion
+
+        #region PROPERTIES
         
         #endregion
+
+
+        #region CONSTRUCTORS
 
         public ConsoleView(Player playerOne, Player playerTwo)
         {
@@ -34,8 +41,20 @@ namespace ConnectFour
             InitializeDisplay();
         }
 
+        #endregion
+
+        #region METHODS
+
+        public void GetContinueKey()
+        {
+            Console.ReadKey();
+        }
+
         private void InitializeDisplay()
         {
+
         }
+
+        #endregion
     }
 }
