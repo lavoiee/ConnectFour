@@ -23,6 +23,7 @@ namespace ConnectFour
 
         Player _playerOne;
         Player _playerTwo;
+        GameBoard _gameBoard;
 
         #endregion
 
@@ -33,10 +34,11 @@ namespace ConnectFour
 
         #region CONSTRUCTORS
 
-        public ConsoleView(Player playerOne, Player playerTwo)
+        public ConsoleView(Player playerOne, Player playerTwo, GameBoard gameBoard)
         {
             _playerOne = playerOne;
             _playerTwo = playerTwo;
+            _gameBoard = gameBoard;
 
             InitializeDisplay();
         }

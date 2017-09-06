@@ -35,7 +35,7 @@ namespace ConnectFour
             _gameBoard = new GameBoard();         
             _playerOne = new Player();
             _playerTwo = new Player();
-            _gameConsole = new ConsoleView(_playerOne, _playerTwo);
+            _gameConsole = new ConsoleView(_playerOne, _playerTwo, _gameBoard);
             _playingGame = true;
         }
 
