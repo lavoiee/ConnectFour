@@ -8,9 +8,19 @@ namespace ConnectFour
 {
     class ConsoleView
     {
-        public ConsoleView()
-        {
+        Player _playerOne;
+        Player _playerTwo;
 
+        public ConsoleView(Player playerOne, Player playerTwo)
+        {
+            _playerOne = playerOne;
+            _playerTwo = playerTwo;
+
+            InitializeDisplay();
+        }
+
+        private void InitializeDisplay()
+        {
         }
     }
 }

@@ -23,7 +23,7 @@ namespace ConnectFour
         private void InitializeGame()
         {
             _gameBoard = new GameBoard();
-            _gameConsole = new ConsoleView();
+            _gameConsole = new ConsoleView(_playerOne, _playerTwo);
             _playerOne = new Player();
             _playerTwo = new Player();
             _playingGame = true;
