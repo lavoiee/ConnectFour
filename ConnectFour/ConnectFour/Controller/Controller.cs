@@ -8,17 +8,27 @@ namespace ConnectFour
 {
     class Controller
     {
+        #region FIELDS
+
         private ConsoleView _gameConsole;
         private GameBoard _gameBoard;
         private Player _playerOne;
         private Player _playerTwo;
         private bool _playingGame;
 
+        #endregion
+
+        #region CONSTRUCTORS
+
         public Controller()
         {
             InitializeGame();
             ManageGameLoop();
         }
+
+        #endregion
+
+        #region METHODS
 
         private void InitializeGame()
         {
@@ -28,6 +38,7 @@ namespace ConnectFour
             _playerTwo = new Player();
             _playingGame = true;
         }
+
         private void ManageGameLoop()
         {
             while (_playingGame)
@@ -35,5 +46,7 @@ namespace ConnectFour
 
             }   
         }
+
+        #endregion 
     }
 }
