@@ -20,7 +20,9 @@ namespace ConnectFour
         #endregion
 
         #region FIELDS
-
+        //
+        // Temporary objects to pass object references.
+        //
         Player _playerOne;
         Player _playerTwo;
         GameBoard _gameBoard;
@@ -33,7 +35,12 @@ namespace ConnectFour
 
 
         #region CONSTRUCTORS
-
+        /// <summary>
+        /// Constructor for ConsoleView.
+        /// </summary>
+        /// <param name="playerOne"></param>
+        /// <param name="playerTwo"></param>
+        /// <param name="gameBoard"></param>
         public ConsoleView(Player playerOne, Player playerTwo, GameBoard gameBoard)
         {
             _playerOne = playerOne;
@@ -46,12 +53,17 @@ namespace ConnectFour
         #endregion
 
         #region METHODS
-
+        /// <summary>
+        /// Method to stay the screen until user enters a key.
+        /// </summary>
         public void GetContinueKey()
         {
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Method to set up the console.
+        /// </summary>
         private void InitializeDisplay()
         {
             
