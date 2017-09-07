@@ -10,6 +10,9 @@ namespace ConnectFour
     {
         static void Main(string[] args)
         {
+            /// <summary>
+            /// Instantiate the controller.
+            /// </summary>
             Controller gameController = new Controller();
 
             Console.ReadKey();
