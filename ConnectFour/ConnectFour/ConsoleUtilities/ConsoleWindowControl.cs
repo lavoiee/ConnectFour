@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConnectFour
 {
-    class ConsoleWindowControl
+    public static class ConsoleWindowControl
     {
     }
 }

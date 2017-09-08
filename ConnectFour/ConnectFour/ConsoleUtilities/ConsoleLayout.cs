@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConnectFour
 {
-    class ConsoleLayout
+    public static class ConsoleLayout
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConnectFour
 {
-    class ConsoleTheme
+    public static class ConsoleTheme
     {
     }
 }
