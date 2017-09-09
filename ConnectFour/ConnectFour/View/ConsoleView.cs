@@ -66,7 +66,20 @@ namespace ConnectFour
         /// </summary>
         private void InitializeDisplay()
         {
-            
+            //
+            // Control Console Window properties.
+            //
+            ConsoleWindowControl.DisableResize();
+            ConsoleWindowControl.DisableMaximize();
+            ConsoleWindowControl.DisableMinimize();
+            Console.Title = "Connect Four";
+
+            //
+            // Set default console window values.
+            //
+            ConsoleWindowHelper.InitializeConsoleWindow();
+
+            Console.CursorVisible = false;
         }
 
         #endregion
