@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ConnectFour
 {
     class ConsoleView
@@ -11,7 +12,7 @@ namespace ConnectFour
 
         #region ENUMS
 
-        private enum ViewStatus
+        private enum ViewState
         {
             PlayerInitialization,
             PlayingGame
@@ -26,11 +27,19 @@ namespace ConnectFour
         Player _playerOne;
         Player _playerTwo;
         GameBoard _gameBoard;
+        private ViewState _currentViewState;
+
+        private ViewState CurrentViewState
+        {
+            get { return _currentViewState; }
+            set { _currentViewState = value; }
+        }
+
 
         #endregion
 
         #region PROPERTIES
-        
+
         #endregion
 
 
@@ -43,6 +52,8 @@ namespace ConnectFour
         /// <param name="gameBoard"></param>
         public ConsoleView(Player playerOne, Player playerTwo, GameBoard gameBoard)
         {
+            _currentViewState = ViewState.PlayerInitialization;
+
             _playerOne = playerOne;
             _playerTwo = playerTwo;
             _gameBoard = gameBoard;
@@ -66,20 +77,6 @@ namespace ConnectFour
         /// </summary>
         private void InitializeDisplay()
         {
-            //
-            // Control Console Window properties.
-            //
-            ConsoleWindowControl.DisableResize();
-            ConsoleWindowControl.DisableMaximize();
-            ConsoleWindowControl.DisableMinimize();
-            Console.Title = "Connect Four";
-
-            //
-            // Set default console window values.
-            //
-            ConsoleWindowHelper.InitializeConsoleWindow();
-
-            Console.CursorVisible = false;
         }
 
         #endregion

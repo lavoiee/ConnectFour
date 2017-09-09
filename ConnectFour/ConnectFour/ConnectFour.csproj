@@ -43,10 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleUtilities\ConsoleLayout.cs" />
-    <Compile Include="ConsoleUtilities\ConsoleTheme.cs" />
-    <Compile Include="ConsoleUtilities\ConsoleWindowControl.cs" />
-    <Compile Include="ConsoleUtilities\ConsoleWindowHelper.cs" />
     <Compile Include="Controller\Controller.cs" />
     <Compile Include="Model\GameBoard.cs" />
     <Compile Include="Model\Player.cs" />
@@ -59,6 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ConsoleUtilities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
